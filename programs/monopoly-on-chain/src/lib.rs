@@ -9,7 +9,6 @@ use std::str::FromStr;
 use crate::proccesors::create_global_position::*;
 use crate::proccesors::create_player_pda::*;
 use crate::proccesors::initialize_game_state::*;
-// Now, import the function from the module
 use crate::program_struct::*;
 
 declare_id!("Fg6PaFpoGXkYsidMpWTK6W2BeZ7FEfcYkg476zPFsLnS");
@@ -43,7 +42,7 @@ pub mod monopoly_on_chain {
     }
 }
 
-pub const ADMIN_WALLETS: [&str; 1] = ["STAKEnkdPT2vD7g5Gm1NYKNZM2hhCkGjvjBuVyTXh85"];
+pub const ADMIN_WALLETS: [&str; 1] = ["ADMIN_WALLET"];
 
 pub fn admin_guard(admin: &AccountInfo) -> bool {
     ADMIN_WALLETS
