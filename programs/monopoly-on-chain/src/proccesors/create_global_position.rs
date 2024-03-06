@@ -16,7 +16,7 @@ pub fn init_global_position(
     position: u8,
     position_type: PositionType,
     price: u32,
-    rent_levels: [u32; 5],
+    rent_levels: [u32; 6],
     rent: u32,
 ) {
     let mut global_position_account = &mut ctx.accounts.global_position_account;
