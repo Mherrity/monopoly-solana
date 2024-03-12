@@ -6,3 +6,8 @@ pub mod roll_dice;
 pub mod pay_user_and_finish_turn;
 pub mod pay_tax_and_finish_turn;
 pub mod buy_property;
+pub mod buy_house_or_hotel;
+pub mod mortgage_house;
+pub mod lift_mortgage;
+pub mod sell_house_or_hotel;
+pub mod send_player_to_jail;

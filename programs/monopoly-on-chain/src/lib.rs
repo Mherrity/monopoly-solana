@@ -72,6 +72,32 @@ pub mod monopoly_on_chain {
         buy_property(ctx);
         Ok(())
     }
+    //buys the house or hotel
+    pub fn buy_house_or_hotel(ctx: Context<FinishTurn>) -> Result<()> {
+        buy_house_or_hotel(ctx);
+        Ok(())
+    }
+    //mortgages the house
+    pub fn mortgage_house(ctx: Context<FinishTurn>) -> Result<()> {
+        mortgage_house(ctx);
+        Ok(())
+    }
+    //lifts the mortgage
+    pub fn lift_mortgage(ctx: Context<FinishTurn>) -> Result<()> {
+        lift_mortgage(ctx);
+        Ok(())
+    }
+    //sells the house or hotel
+    pub fn sell_house_or_hotel(ctx: Context<FinishTurn>) -> Result<()> {
+        sell_house_or_hotel(ctx);
+        Ok(())
+    }
+    //sends the player to jail
+    pub fn send_player_to_jail(ctx: Context<FinishTurn>) -> Result<()> {
+        send_player_to_jail(ctx);
+        Ok(())
+    }
+
 }
 
 pub const ADMIN_WALLETS: [&str; 1] = ["ADMIN_WALLET"];
